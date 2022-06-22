@@ -1,0 +1,178 @@
+@charset 'utf-8';
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  src: local('Spoqa Han Sans Bold'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansBold.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansBold.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 400;
+  src: local('Spoqa Han Sans Regular'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 300;
+  src: local('Spoqa Han Sans Light'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 100;
+  src: local('Spoqa Han Sans Thin'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+html {
+  font-size: 16px;
+
+}
+
+body {
+  font-family: "Spoqa Han Sans", 'Sans-serif';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.2px;
+
+}
+
+/* 공통 영역 */
+.clearfix::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+
+}
+
+.inner {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* 상단 배너 */
+.popup {
+  position: relative;
+  display: block;
+}
+
+/* 내용 영역 */
+.wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #333;
+}
+
+/* 헤더영역 */
+.header {
+  position: relative;
+  display: block;
+  z-index: 9999px;
+}
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  /* background-color: #fff; */
+}
+.logo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 129px;
+  height: 48px;
+  background: url('../images/logohead.svg') no-repeat center;
+  background-size: cover;
+  
+}
+.header-left{
+  position: relative;
+  display: block;
+  float: left;
+  left:0;
+}
+.header-left ul{
+  position: relative;
+  display: block;
+}
+.header-left ul li{
+  position: relative;
+  display: block;
+}
+.header-left ul li a{
+  color: #fff;
+}
+/* 비주얼 영역 */
+.visual {
+  position: relative;
+  display: block;
+}
+
+/* 이벤트 안내 */
+.event {
+  position: relative;
+  display: block;
+}
+
+/* 베스트 상품 목록 */
+.bestgoods {
+  position: relative;
+  display: block;
+}
+
+/* 배너 영역 */
+.banner {
+  position: relative;
+  display: block;
+}
+
+/* 푸터 */
+.footer {
+  position: relative;
+  display: block;
+}
