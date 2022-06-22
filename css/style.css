@@ -74,6 +74,15 @@ body {
 }
 
 /* 공통 영역 */
+
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
 .clearfix::after {
   content: '';
   position: relative;
@@ -82,14 +91,6 @@ body {
   clear: both;
 
 }
-
-.inner {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  max-width: 1400px;
-}
-
 /* 상단 배너 */
 .popup {
   position: relative;
@@ -101,12 +102,12 @@ body {
   position: relative;
   display: block;
   width: 100%;
-  background-color: #333;
+  background-color: #000;
 }
 
 /* 헤더영역 */
 .header {
-  position: relative;
+  position: fixed;
   display: block;
   z-index: 9999px;
 }
@@ -128,51 +129,254 @@ body {
   height: 48px;
   background: url('../images/logohead.svg') no-repeat center;
   background-size: cover;
-  
 }
 .header-left{
   position: relative;
   display: block;
   float: left;
-  left:0;
+  width: 40%;
+  top: 25%;
+  margin-left: 34px;
+  margin-top: 16px;
+  left:10%;
 }
 .header-left ul{
   position: relative;
   display: block;
+  margin: 1px;
+  text-align: center;
 }
 .header-left ul li{
   position: relative;
   display: block;
+  float: left;
+  margin-right: 14px;
+  padding: 0 15px;
+  cursor: pointer;
 }
-.header-left ul li a{
+.header-left ul li span{
+  color: #fff;
+  font-size: 18px;
+  line-height: 18px;
+}
+.navigation-right{
+  position: relative;
+  display: block;
+  float: right;
+  width: 40%;
+  top: 25%;
+  margin: 0 auto;
+  font-family: 'Spoqa Han Sans',"Sans-serif";
+  z-index: 10;
+}
+.navigation-submenu{
+  position: relative;
+  display:block;
+  float: left;
+  margin-top:18px;
   color: #fff;
 }
+.navigation-submenu li{
+  position: relative;
+  display: block;
+  float: left;
+  margin-left: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+}
+.navigation-submenu-split{
+  position: relative;
+  display: block;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 1px;
+  height: 12px;
+  margin-top: 22px;
+  background-color: #fff;
+}
+.navigation-submenu{
+  display: block;
+  float: left;
+  margin-left: 0;
+}
+.navigation-submenu li:first-child{
+  margin-left: 0;
+}
+.navigation-cart {
+  position: relative;
+  display: block;
+}
+.navigation-cart i{
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-left: 24px;
+  background: url('../images/cartwhite.svg') no-repeat;
+  background-size: cover;
+  float: left;
+}
+.navigation-side {
+  float: left;
+  margin-left: 8px;
+  width: 48px;
+  height: 48px;
+  display: block;
+  background: url('../images/whitemenu.svg') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
 /* 비주얼 영역 */
 .visual {
   position: relative;
   display: block;
+  
+}
+.visual-main{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 1140px;
+  height: 560px;
+  background: url('../images/background1.png') no-repeat center;
+  background-size: cover;
+  cursor: pointer;
 }
 
 /* 이벤트 안내 */
 .event {
   position: relative;
   display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: 270px;
+  background-color: aqua;
+  border: 1px solid #000;
+}
+.event-inner{
+  position: relative;
+  display: block;
+  width: 1184px;
+  height: 150px;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+
+}
+.event-left{
+  position: relative;
+  display: block;
+
+}
+.event-right{
+  position: relative;
+  display: block;
+
 }
 
 /* 베스트 상품 목록 */
 .bestgoods {
   position: relative;
   display: block;
+  width: 1184px;
+  height: 1154px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: bisque;
 }
+.bestgoods-inner{
+  position: relative;
+  display: block;
+}
+.bestgoods-inner h5{
+  position: relative;
+  display: block;
+  line-height: 32px;
+  font-family 'Spoqa Han Sans', 'Sans-serif';
+  font-size: 32px;
+  font-weight: 700
+}
+.bestgoods-list{
+  position: relative;
+  display: block;
+  margin-top: 32px;
+  width: 1270px;
+  height: 1090px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+  
+}
+.goods-data{
+  position: relative;
+  display: block;
+  float: left;
+  width: 376px;
+  margin-right: 28px;
+  margin-bottom: 61px;
+  border: 1px solid blue;
+}
+.goods-data:nth-child(3){
+  margin-right: 0px;
+}
+.goods-data:last-child{
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+.goods-area{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 416px;
+  background-color: #f9f7f8;
 
+} 
+.goods-area img{
+  position: relative;
+  display: block;
+  margin-left:50px;
+  margin-top: 70px;
+  cursor: pointer;
+
+}
 /* 배너 영역 */
 .banner {
   position: relative;
   display: block;
+  width: 100%;
+  height: 208px;
+  margin-left: 49px;
+  margin-right: 49px;
+  margin-top: 33px;
+  /* text-align: center; */
+  margin: 0 auto;
+  
 }
+.banner-inner{
+  position: relative;
+  display: block;
+  text-align: center;
+  
+}
+.banner-image{}
 
 /* 푸터 */
 .footer {
   position: relative;
   display: block;
+  width: 100%;
+  height: 398px;
+  margin-top: 150px;
+  border-top: 1px solid #dbdbdb;
+  background-color: #fff;
+  text-align: center;
+}
+.footer h2{
+  font-size: 100px;
+  
 }
